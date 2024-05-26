@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>zimzy.lol</title>
+        <meta property="og:title" content="Site Title" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://zimzy.lol/" />
+    <!-- <meta property="og:image" content="" /> -->
+    <meta property="og:description" content="hi" />
+    <meta name="theme-color" content="#7e28e0">
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body onload="myFunction()">
+        <img class="pfp" src="assets/pfp.png">
+        <hr class="line">
+        <div class="telegram">
+            <form action="https://t.me/bisexualism" target="_blank">
+                <button class="button">
+                    telegram
+                </button>
+            </form>
+        </div>
+        <div class="tiktok">
+            <form action="https://tiktok.com/@qrc" target="_blank">
+                <button class="button">
+                    tiktok
+                </button>
+            </form>
+        </div>
+        <div class="github">
+            <form action="https://github.com/sluggish" target="_blank">
+                <button class="button">
+                    github
+                </button>
+            </form>
+        </div>
+        <video autoplay muted loop id="myVideo">
+            <source src="assets/bg.mp4" type="video/mp4">
+        </video>
+        <audio loop id="music" src="assets/bg.mp3" autoplaystyle="display:none"></audio>
+        <script>
+            (function () {
+                const music = document.getElementById('music');
+
+                function catchHandler() {
+
+                    let inputListener;
+                    inputListener = function () {
+                        music.play();
+                        document.removeEventListener('mousedown', inputListener);
+                        document.removeEventListener('keydown', inputListener);
+                    };
+
+                    document.addEventListener('mousedown', inputListener);
+                    document.addEventListener('keydown', inputListener);
+                }
+
+                if (music.readyState > 1) {
+                    music.play().catch(catchHandler);
+                } else {
+                    music.addEventListener('canplay', function () {
+                        music.play().catch(catchHandler);
+                    });
+                }
+            })();
+        </script>
+    </body>
+</html>

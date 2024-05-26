@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+body {
+    background-color: black;
+
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -5;
+    opacity: 50%;
+    background-color: black;
+}
+  
+  .pfp {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    z-index: 2;
+
+}
+
+.line {
+    width: 50px;
+    z-index: 3;
+    color: white;
+}
+
+.button {
+    transition: all .5s ease;
+    border: 1.5px solid white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent;
+    border-radius: 5px;
+    width: 500px;
+    color: white;
+    height: 35px;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    outline: none;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.button:hover {
+    color: rgb(87, 87, 87);
+    border-color: rgb(87, 87, 87);
+}
+
+.tiktok {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+}
+.github {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+}
+
+.music-player {
+    display: block;
+}
